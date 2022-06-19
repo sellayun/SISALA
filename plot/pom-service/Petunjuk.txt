@@ -1,0 +1,18 @@
+Berikut petunjuk menjalankan program:
+1. ekstrak file Model_KT
+2. jalankan "pom2k.exe"
+3. masukkan nread 0 ketika pertama kali menjalankan program
+4. masukkan jumlah hari simulasi yang diinginkan, misalnya 1 hari
+5. setelah selesai, akan muncul permintaan memasukkan file restart unit 71.
+6. tulis nama file yang akan digunakan sebagai nilai awal pada simulasi yang berikutnya, misalnya "restar01"
+7. hasil simulasi tersimpan dalam file "POM.OUT"
+8. rename file "POM.OUT" dengan nama "POM01.out", jika file hanya menyimpan hasil di hari ke 1
+9. lanjutkan simulasi pada hari berikutnya dengan menjalankan "pom2k.exe"
+10. masukkan nread =1
+11. masukkan jumlah hari, misal 1
+12. masukkan nama file restart pada unit 70, misal "restart01"
+13. masukkan nama file restart pada unit 71, misal "restart02"
+14. hasil simulasi disimpan pada file "POM.OUT"
+15. rename file "POM.OUT"
+16. ulangi langkah 9-15
+17. simulasi dihentikan pada hari ke 10
