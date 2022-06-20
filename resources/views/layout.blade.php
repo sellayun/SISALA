@@ -92,7 +92,7 @@
             echo json_encode("Oktober");
           } else if ($value->bulan == "11") {
             echo json_encode("November");
-          } else if ($value->bulan == "12") {
+          } else {
             echo json_encode("Desember");
           }
           ?>,

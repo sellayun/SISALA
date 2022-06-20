@@ -50,7 +50,7 @@
                     echo '<p class="text-center" style="background-color: #E8D742; color: white;">Proses</p>';
                     echo '</td>';
                     echo '<td>';
-                    echo '<a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil</a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil Elevasi</a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil Arus</a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil Kecepatan Arus</a>';
+                    echo '<a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil</a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil Elevasi</a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Data Kecepatan Arus U </a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil Kecepatan Arus V</a>';
                     echo '</td>';
                     echo '<td>';
                     echo '<a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-trash"></i> Hapus</a>';
@@ -60,7 +60,7 @@
                     echo '<p class="btn-success text-center">Selesai</p>';
                     echo '</td>';
                     echo '<td>';
-                    echo '<a href="/data_shared/'.$result->workdir.'/Hasil.out" class="btn btn-primary btn-sm" download><i class="fas fa-fw fa-download"></i> Hasil</a> <a href="/data_shared/'.$result->workdir.'/Hasil_e.txt" class="btn btn-primary btn-sm" download><i class="fas fa-fw fa-download"></i> Hasil Elevasi</a> <a href="/data_shared/'.$result->workdir.'/Hasil_u.txt" class="btn btn-primary btn-sm" download><i class="fas fa-fw fa-download"></i> Hasil Arus</a> <a href="/data_shared/'.$result->workdir.'/Hasil_v.txt" class="btn btn-primary btn-sm" download><i class="fas fa-fw fa-download"></i> Hasil Kecepatan Arus</a>';
+                    echo '<a href="/data_shared/'.$result->workdir.'/Hasil.out" class="btn btn-primary btn-sm" download><i class="fas fa-fw fa-download"></i> Hasil</a> <a href="/data_shared/'.$result->workdir.'/Hasil_e.txt" class="btn btn-primary btn-sm" download><i class="fas fa-fw fa-download"></i> Hasil Elevasi</a> <a href="/data_shared/'.$result->workdir.'/Hasil_u.txt" class="btn btn-primary btn-sm" download><i class="fas fa-fw fa-download"></i> Data Kecepatan Arus U </a> <a href="/data_shared/'.$result->workdir.'/Hasil_v.txt" class="btn btn-primary btn-sm" download><i class="fas fa-fw fa-download"></i> Hasil Kecepatan Arus V</a>';
                     echo '</td>';
                     echo '<td>';
                     echo '<button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#batal'.$result->id.'" style="width: 80px;"><i class="fas fa-fw fa-trash"></i> Hapus</button>';
@@ -70,7 +70,7 @@
                     echo '<p class="text-center" style="background-color: #E8D742; color: white;">Proses</p>';
                     echo '</td>';
                     echo '<td>';
-                    echo '<a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil</a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil Elevasi</a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil Arus</a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil Kecepatan Arus</a>';
+                    echo '<a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil</a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil Elevasi</a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Data Kecepatan Arus U </a> <a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-download"></i> Hasil Kecepatan Arus V</a>';
                     echo '</td>';
                     echo '<td>';
                     echo '<a href="#" class="btn btn-secondary btn-sm"><i class="fas fa-fw fa-trash"></i> Hapus</a>';

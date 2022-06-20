@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Mail;
 use App\Models\User;
 use App\Models\RecoverCode;
+use App\Models\RegisterVerif;
 use Illuminate\Support\Facades\DB;
 
 class AuthController extends Controller
@@ -86,13 +87,13 @@ class AuthController extends Controller
 				        $randomString .= $characters[rand(0, $charactersLength - 1)];
 				    }
 
-					$data['email'] = $email;
-					$data['code'] = $randomString;
-					$data['status'] = 0;
+					$datainsert['email'] = $email;
+					$datainsert['code'] = $randomString;
+					$datainsert['status'] = 0;
 			
-					$model = new RecoverCode();
-					$model->fill($data);
-					$isSuccess = $model->save();
+					// $model = new RecoverCode();
+					// $model->fill($datainsert);
+					// $isSuccess = $model->save();
 
 
 					// DB::table('recovercode')->insert([
@@ -216,9 +217,9 @@ class AuthController extends Controller
 					$data['verif'] = 0;
 					$data['tanggal'] = date('Y-m-d H:i:s');
 			
-					$model = new User();
-					$model->fill($data);
-					$isSuccess = $model->save();
+					// $model = new User();
+					// $model->fill($data);
+					// $isSuccess = $model->save();
 
 
 					// DB::table('user')->insert([
@@ -244,9 +245,9 @@ class AuthController extends Controller
 					$data['code'] = $randomString;
 					$data['status'] = 0;
 			
-					$model = new RegisterVerif();
-					$model->fill($data);
-					$isSuccess = $model->save();
+					// $model = new RegisterVerif();
+					// $model->fill($data);
+					// $isSuccess = $model->save();
 
 
 					// DB::table('registerverif')->insert([
