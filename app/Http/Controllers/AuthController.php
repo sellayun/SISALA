@@ -173,18 +173,20 @@ class AuthController extends Controller
     public function register_verif($id)
     {
 		$data = RegisterVerif::where('code', $id)
-		->where('status', 0)
 		->first();
-		$data2 = RegisterVerif::where('code', $id)
-		->where('status', 0)
-		->update([
-			'status' => 1
-		]);
-		$data3 = User::where('email', $data->email)
-		->update([
-			'verif' => 1
-		]);
-        return redirect('login')->with('sukses', 'akun anda telah terverifikasi, silahkan login');
+		if ($data->status == 0) {
+			$data2 = RegisterVerif::where('code', $id)
+			->update([
+				'status' => 1
+			]);
+			$data3 = User::where('email', $data->email)
+			->update([
+				'verif' => 1
+			]);
+			return redirect('login')->with('sukses', 'akun anda telah terverifikasi, silahkan login');
+		} else {
+			return redirect('login')->with('sukses', 'email anda telah terverifikasi, silahkan login');
+		}
     }
 
 	public function register_aksi(Request $request)
