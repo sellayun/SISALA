@@ -91,9 +91,9 @@ class AuthController extends Controller
 					$datainsert['code'] = $randomString;
 					$datainsert['status'] = 0;
 			
-					// $model = new RecoverCode();
-					// $model->fill($datainsert);
-					// $isSuccess = $model->save();
+					$model = new RecoverCode();
+					$model->fill($datainsert);
+					$isSuccess = $model->save();
 
 
 					// DB::table('recovercode')->insert([
@@ -217,9 +217,9 @@ class AuthController extends Controller
 					$data['verif'] = 0;
 					$data['tanggal'] = date('Y-m-d H:i:s');
 			
-					// $model = new User();
-					// $model->fill($data);
-					// $isSuccess = $model->save();
+					$model = new User();
+					$model->fill($data);
+					$isSuccess = $model->save();
 
 
 					// DB::table('user')->insert([
@@ -245,9 +245,9 @@ class AuthController extends Controller
 					$data['code'] = $randomString;
 					$data['status'] = 0;
 			
-					// $model = new RegisterVerif();
-					// $model->fill($data);
-					// $isSuccess = $model->save();
+					$model = new RegisterVerif();
+					$model->fill($data);
+					$isSuccess = $model->save();
 
 
 					// DB::table('registerverif')->insert([
