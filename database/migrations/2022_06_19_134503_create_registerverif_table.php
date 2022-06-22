@@ -17,8 +17,8 @@ class CreateRegisterverifTable extends Migration
             $table->id();
             $table->string('email');
             $table->string('code');
-            $table->date('datecreate');
-            $table->date('expire');
+            $table->date('datecreate')->nullable();
+            $table->date('expire')->nullable();
             $table->boolean('status');
         });
     }

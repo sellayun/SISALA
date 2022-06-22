@@ -22,9 +22,9 @@ class CreateSimulasiTable extends Migration
             $table->text('data_c');
             $table->text('data_d');
             $table->integer('status');
-            $table->string('workdir');
-            $table->string('id_simulasi');
-            $table->integer('hapus');
+            $table->string('workdir')->nullable();
+            $table->string('id_simulasi')->nullable();
+            $table->integer('hapus')->nullable();
         });
     }
 

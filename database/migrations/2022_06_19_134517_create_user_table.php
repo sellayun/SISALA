@@ -18,13 +18,13 @@ class CreateUserTable extends Migration
             $table->text('foto');
             $table->string('nama');
             $table->string('email');
-            $table->string('nim');
-            $table->string('phone');
+            $table->string('nim')->nullable();
+            $table->string('phone')->nullable();
             $table->string('password');
-            $table->enum('difficulty', ['Admin', 'Mahasiswa']);
+            $table->enum('level', ['Admin', 'Mahasiswa']);
             $table->boolean('status');
             $table->boolean('verif');
-            $table->dateTime('tanggal', $precision = 0);
+            $table->dateTime('tanggal', $precision = 0)->nullable();
         });
     }
 
